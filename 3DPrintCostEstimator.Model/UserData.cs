@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 namespace _3DPrintCostEstimator.Model
 {
@@ -9,5 +10,8 @@ namespace _3DPrintCostEstimator.Model
 
         public Double Cost1kWh { get; set; }
         public string CurencySymbol { get; set; }
+
+        public List<Printers>? Printer { get; set; }
+        public List<Filaments>? Filament { get; set; }
     }
 }
