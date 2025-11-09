@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-
+using _3DPrintCostEstimator.Data.Contexts;
+using _3DPrintCostEstimator.Data.UnitOfWork;
 namespace _3DPrintCostEstimator
 {
     public static class MauiProgram
@@ -18,7 +19,8 @@ namespace _3DPrintCostEstimator
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddDbContext<ProjectContext>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             return builder.Build();
         }
     }

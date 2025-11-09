@@ -1,24 +1,21 @@
-﻿namespace _3DPrintCostEstimator
+﻿using Microsoft.EntityFrameworkCore;
+using _3DPrintCostEstimator.Data.Contexts;
+using _3DPrintCostEstimator.Data.UnitOfWork;
+using _3DPrintCostEstimator.Model;
+namespace _3DPrintCostEstimator
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private readonly IUnitOfWork _unitOfWork;
+        
 
-        public MainPage()
+        public MainPage(IUnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             InitializeComponent();
+            _unitOfWork.UserData.GetAll();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        
     }
 }

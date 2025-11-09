@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="_3DPrintCostEstimator.SplashScreen"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SplashScreen"
+    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="False">
+    <AbsoluteLayout>
+        <!--  Obraz pełnoekranowy  -->
+        <Image
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Aspect="AspectFill"
+            Source="dotnet_bot.png" />
+    </AbsoluteLayout>
+</ContentPage>
