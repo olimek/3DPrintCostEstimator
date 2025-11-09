@@ -3,15 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjectPlanner.Data.Contexts;
+using _3DPrintCostEstimator.Data.Contexts;
 
 #nullable disable
 
 namespace _3DPrintCostEstimator.Data.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20251109175431_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251109181747_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

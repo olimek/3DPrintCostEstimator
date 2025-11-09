@@ -14,8 +14,6 @@
   <ItemGroup>
     <Folder Include="Contexts\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Repository\IRepository\" />
-    <Folder Include="UnitOfWork\" />
   </ItemGroup>
 
   <ItemGroup>

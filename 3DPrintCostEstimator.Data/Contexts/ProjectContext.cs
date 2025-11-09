@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Sqlite; 
 using _3DPrintCostEstimator.Model;
 
-namespace ProjectPlanner.Data.Contexts
+namespace _3DPrintCostEstimator.Data.Contexts
 {
     public class ProjectContext : DbContext
     {
