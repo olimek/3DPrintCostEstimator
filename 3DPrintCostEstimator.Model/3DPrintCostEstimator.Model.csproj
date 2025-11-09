@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.Triggered" Version="3.2.2" />
+    <PackageReference Include="EntityFrameworkCore.Triggered.Abstractions" Version="3.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.10" />
+  </ItemGroup>
+
 </Project>
