@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace _3DPrintCostEstimator.Model
 {
-    internal class Filaments
+    public class Filaments
     {
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public string PlasticType { get; set; }
+        public Double Price { get; set; }
+
+        public Double Weight { get; set; }
+
     }
 }
