@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
@@ -72,6 +72,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\3DPrintCostEstimator.Data\FDMPrintCostEstimator.Data.csproj" />
 	  <ProjectReference Include="..\3DPrintCostEstimator.Model\FDMPrintCostEstimator.Model.csproj" />
+	  <ProjectReference Include="..\FDMPrintCostEstimator.Service\FDMPrintCostEstimator.Service.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
