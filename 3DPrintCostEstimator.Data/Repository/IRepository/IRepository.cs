@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace _3DPrintCostEstimator.Data.Repository.IRepository
+namespace FDMPrintCostEstimator.Data.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {

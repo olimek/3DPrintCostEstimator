@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3DPrintCostEstimator.Model
+namespace FDMPrintCostEstimator.Model
 {
     public enum FilamentType
     {

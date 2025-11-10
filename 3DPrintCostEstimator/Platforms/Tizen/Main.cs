@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace _3DPrintCostEstimator
+namespace FDMPrintCostEstimator
 {
     internal class Program : MauiApplication
     {

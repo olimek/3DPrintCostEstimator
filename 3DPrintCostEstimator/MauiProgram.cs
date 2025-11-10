@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using _3DPrintCostEstimator.Data.Contexts;
-using _3DPrintCostEstimator.Data.UnitOfWork;
-namespace _3DPrintCostEstimator
+using FDMPrintCostEstimator.Data.Contexts;
+using FDMPrintCostEstimator.Data.UnitOfWork;
+namespace FDMPrintCostEstimator
 {
     public static class MauiProgram
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 
-namespace _3DPrintCostEstimator.Model
+namespace FDMPrintCostEstimator.Model
 {
     public class Filaments
     {

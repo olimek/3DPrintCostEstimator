@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace _3DPrintCostEstimator
+namespace FDMPrintCostEstimator
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

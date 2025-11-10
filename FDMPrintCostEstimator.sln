@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPrintCostEstimator", "3DPrintCostEstimator\3DPrintCostEstimator.csproj", "{8731FA91-A626-4275-BDC4-BE896941B88B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMPrintCostEstimator", "3DPrintCostEstimator\FDMPrintCostEstimator.csproj", "{8731FA91-A626-4275-BDC4-BE896941B88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPrintCostEstimator.Data", "3DPrintCostEstimator.Data\3DPrintCostEstimator.Data.csproj", "{DFA40763-E991-4A82-BFF8-00E8C8129D3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMPrintCostEstimator.Data", "3DPrintCostEstimator.Data\FDMPrintCostEstimator.Data.csproj", "{DFA40763-E991-4A82-BFF8-00E8C8129D3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPrintCostEstimator.Model", "3DPrintCostEstimator.Model\3DPrintCostEstimator.Model.csproj", "{B775B2A3-5D10-4448-B167-3D3B106881C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMPrintCostEstimator.Model", "3DPrintCostEstimator.Model\FDMPrintCostEstimator.Model.csproj", "{B775B2A3-5D10-4448-B167-3D3B106881C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

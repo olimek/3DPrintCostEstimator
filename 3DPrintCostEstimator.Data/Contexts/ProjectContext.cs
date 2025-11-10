@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using _3DPrintCostEstimator.Model;
+using FDMPrintCostEstimator.Model;
 
-namespace _3DPrintCostEstimator.Data.Contexts
+namespace FDMPrintCostEstimator.Data.Contexts
 {
     public class ProjectContext : DbContext
     {

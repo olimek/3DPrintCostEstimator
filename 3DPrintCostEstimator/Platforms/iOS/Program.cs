@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace _3DPrintCostEstimator
+namespace FDMPrintCostEstimator
 {
     public class Program
     {

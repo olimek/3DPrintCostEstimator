@@ -1,2 +1,2 @@
-[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "_3DPrintCostEstimator")]
-[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "_3DPrintCostEstimator.Pages")]
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "FDMPrintCostEstimator")]
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "FDMPrintCostEstimator.Pages")]

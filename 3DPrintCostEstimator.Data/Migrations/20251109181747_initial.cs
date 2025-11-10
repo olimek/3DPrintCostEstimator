@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace _3DPrintCostEstimator.Data.Migrations
+namespace FDMPrintCostEstimator.Data.Migrations
 {
     /// <inheritdoc />
     public partial class initial : Migration

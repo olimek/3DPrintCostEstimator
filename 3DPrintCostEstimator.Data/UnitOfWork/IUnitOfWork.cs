@@ -1,6 +1,6 @@
-﻿using _3DPrintCostEstimator.Data.Repository.IRepository;
+﻿using FDMPrintCostEstimator.Data.Repository.IRepository;
 
-namespace _3DPrintCostEstimator.Data.UnitOfWork
+namespace FDMPrintCostEstimator.Data.UnitOfWork
 {
     public interface IUnitOfWork
     {

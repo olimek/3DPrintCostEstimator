@@ -2,7 +2,7 @@
 using Android.Views;
 #endif
 
-namespace _3DPrintCostEstimator;
+namespace FDMPrintCostEstimator;
 
 public partial class SplashScreen : ContentPage
 {

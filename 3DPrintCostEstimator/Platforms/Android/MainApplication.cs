@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace _3DPrintCostEstimator
+namespace FDMPrintCostEstimator
 {
     [Application]
     public class MainApplication : MauiApplication

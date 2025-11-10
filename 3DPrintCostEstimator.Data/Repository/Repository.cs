@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
-using _3DPrintCostEstimator.Data.Contexts;
-using _3DPrintCostEstimator.Data.Repository.IRepository;
+using FDMPrintCostEstimator.Data.Contexts;
+using FDMPrintCostEstimator.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
-namespace _3DPrintCostEstimator.Data.Repository
+namespace FDMPrintCostEstimator.Data.Repository
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {

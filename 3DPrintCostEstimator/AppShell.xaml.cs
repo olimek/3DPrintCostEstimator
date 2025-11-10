@@ -1,4 +1,4 @@
-﻿namespace _3DPrintCostEstimator
+﻿namespace FDMPrintCostEstimator
 {
     public partial class AppShell : Shell
     {

@@ -1,8 +1,8 @@
-﻿using _3DPrintCostEstimator.Data.Contexts;
-using _3DPrintCostEstimator.Data.Repository.IRepository;
-using _3DPrintCostEstimator.Model;
+﻿using FDMPrintCostEstimator.Data.Contexts;
+using FDMPrintCostEstimator.Data.Repository.IRepository;
+using FDMPrintCostEstimator.Model;
 
-namespace _3DPrintCostEstimator.Data.Repository
+namespace FDMPrintCostEstimator.Data.Repository
 {
     public class FilamentsRepository : Repository<Filaments>, IFilamentsRepository
     {

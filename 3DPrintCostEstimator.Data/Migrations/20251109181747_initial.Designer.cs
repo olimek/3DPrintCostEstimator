@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _3DPrintCostEstimator.Data.Contexts;
+using FDMPrintCostEstimator.Data.Contexts;
 
 #nullable disable
 
-namespace _3DPrintCostEstimator.Data.Migrations
+namespace FDMPrintCostEstimator.Data.Migrations
 {
     [DbContext(typeof(ProjectContext))]
     [Migration("20251109181747_initial")]
@@ -19,7 +19,7 @@ namespace _3DPrintCostEstimator.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.Filaments", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.Filaments", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace _3DPrintCostEstimator.Data.Migrations
                     b.ToTable("Filaments");
                 });
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.Printers", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.Printers", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,7 +71,7 @@ namespace _3DPrintCostEstimator.Data.Migrations
                     b.ToTable("Printers");
                 });
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.UserData", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.UserData", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -89,21 +89,21 @@ namespace _3DPrintCostEstimator.Data.Migrations
                     b.ToTable("UserData");
                 });
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.Filaments", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.Filaments", b =>
                 {
-                    b.HasOne("_3DPrintCostEstimator.Model.UserData", null)
+                    b.HasOne("FDMPrintCostEstimator.Model.UserData", null)
                         .WithMany("Filament")
                         .HasForeignKey("UserDataId");
                 });
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.Printers", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.Printers", b =>
                 {
-                    b.HasOne("_3DPrintCostEstimator.Model.UserData", null)
+                    b.HasOne("FDMPrintCostEstimator.Model.UserData", null)
                         .WithMany("Printer")
                         .HasForeignKey("UserDataId");
                 });
 
-            modelBuilder.Entity("_3DPrintCostEstimator.Model.UserData", b =>
+            modelBuilder.Entity("FDMPrintCostEstimator.Model.UserData", b =>
                 {
                     b.Navigation("Filament");
 

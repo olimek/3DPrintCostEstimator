@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using _3DPrintCostEstimator.Data.Contexts;
-using _3DPrintCostEstimator.Data.UnitOfWork;
-using _3DPrintCostEstimator.Model;
-namespace _3DPrintCostEstimator
+using FDMPrintCostEstimator.Data.Contexts;
+using FDMPrintCostEstimator.Data.UnitOfWork;
+using FDMPrintCostEstimator.Model;
+namespace FDMPrintCostEstimator
 {
     public partial class MainPage : ContentPage
     {
