@@ -2,7 +2,8 @@
 using FDMPrintCostEstimator.Data.Contexts;
 using FDMPrintCostEstimator.Data.UnitOfWork;
 using FDMPrintCostEstimator.Model;
-namespace FDMPrintCostEstimator
+namespace FDMPrintCostEstimator.Pages
+
 {
     public partial class MainPage : ContentPage
     {

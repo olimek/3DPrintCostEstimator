@@ -7,10 +7,11 @@ namespace FDMPrintCostEstimator.Model
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public FilamentType Type { get; set; }
-        public Double Price { get; set; }
-        public Double Weight { get; set; }
+        
+        public required string Name { get; set; }
+        public FilamentType? Type { get; set; }
+        public required Double Price { get; set; }
+        public Double ?Weight { get; set; }
 
     }
 }

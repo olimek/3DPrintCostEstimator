@@ -7,9 +7,9 @@ namespace FDMPrintCostEstimator.Model
     {
         [Key]
         public int Id { get; set; }
-
+        [Required]
         public Double Cost1kWh { get; set; }
-        public string CurencySymbol { get; set; }
+        public string? CurencySymbol { get; set; }
         public List<Printers>? Printer { get; set; }
         public List<Filaments>? Filament { get; set; }
     }
