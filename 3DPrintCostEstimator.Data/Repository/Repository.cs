@@ -1,7 +1,7 @@
-﻿using System.Linq.Expressions;
-using FDMPrintCostEstimator.Data.Contexts;
+﻿using FDMPrintCostEstimator.Data.Contexts;
 using FDMPrintCostEstimator.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace FDMPrintCostEstimator.Data.Repository
 {
@@ -42,8 +42,10 @@ namespace FDMPrintCostEstimator.Data.Repository
         public virtual void RemoveAll()
         {
             var entities = GetAll();
-            if (entities is not null) 
+            if (entities is not null)
+            {
                 RemoveList(entities);
+            }
         }
 
         public virtual void RemoveList(IEnumerable<T> entity)

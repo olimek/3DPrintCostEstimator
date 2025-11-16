@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FDMPrintCostEstimator.Data.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20251110190550_InitialTwo")]
-    partial class InitialTwo
+    [Migration("20251116141846_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

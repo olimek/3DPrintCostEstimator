@@ -15,7 +15,7 @@ namespace FDMPrintCostEstimator.Data.Contexts
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "projectsplanner.db3");
+            DbPath = System.IO.Path.Join(path, "FDMPrintCostEstimator.db3");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

@@ -1,14 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using FDMPrintCostEstimator.Data.Contexts;
-using FDMPrintCostEstimator.Data.UnitOfWork;
-using FDMPrintCostEstimator.Model;
+﻿using FDMPrintCostEstimator.Data.UnitOfWork;
+
 namespace FDMPrintCostEstimator.Pages
 
 {
     public partial class MainPage : ContentPage
     {
         private readonly IUnitOfWork _unitOfWork;
-        
 
         public MainPage(IUnitOfWork unitOfWork)
         {
@@ -16,7 +13,5 @@ namespace FDMPrintCostEstimator.Pages
             InitializeComponent();
             _unitOfWork.UserData.GetAll();
         }
-
-        
     }
 }
