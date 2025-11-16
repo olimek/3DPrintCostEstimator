@@ -1,7 +1,6 @@
 ﻿using FDMPrintCostEstimator.Data.Contexts;
 using FDMPrintCostEstimator.Data.Repository;
 using FDMPrintCostEstimator.Data.Repository.IRepository;
-using FDMPrintCostEstimator.Model;
 
 namespace FDMPrintCostEstimator.Data.UnitOfWork
 {
@@ -12,7 +11,7 @@ namespace FDMPrintCostEstimator.Data.UnitOfWork
         public UnitOfWork(ProjectContext db)
         {
             _db = db;
-            
+
             Filaments = new FilamentsRepository(_db);
             Printers = new PrintersRepository(_db);
             UserData = new UserDataRepository(_db);
@@ -22,7 +21,6 @@ namespace FDMPrintCostEstimator.Data.UnitOfWork
 
         public IPrintersRepository Printers { get; private set; }
         public IUserDataRepository UserData { get; private set; }
-
 
         public void Save()
         {

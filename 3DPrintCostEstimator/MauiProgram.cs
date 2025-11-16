@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using FDMPrintCostEstimator.Data.Contexts;
+﻿using FDMPrintCostEstimator.Data.Contexts;
 using FDMPrintCostEstimator.Data.UnitOfWork;
+using FDMPrintCostEstimator.Service;
+using Microsoft.Extensions.Logging;
+
 namespace FDMPrintCostEstimator
 {
     public static class MauiProgram
@@ -17,10 +19,13 @@ namespace FDMPrintCostEstimator
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
             builder.Services.AddDbContext<ProjectContext>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IFilamentService, FilamentService>();
+            builder.Services.AddScoped<IPrinterService, PrinterService>();
+            builder.Services.AddScoped<IUserDataService, UserDataService>();
             return builder.Build();
         }
     }

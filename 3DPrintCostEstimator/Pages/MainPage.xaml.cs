@@ -1,17 +1,29 @@
-﻿using FDMPrintCostEstimator.Data.UnitOfWork;
+﻿using FDMPrintCostEstimator.Service;
 
 namespace FDMPrintCostEstimator.Pages
 
 {
     public partial class MainPage : ContentPage
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserDataService _userDataService;
 
-        public MainPage(IUnitOfWork unitOfWork)
+        public MainPage(IUserDataService userDataService)
         {
-            _unitOfWork = unitOfWork;
             InitializeComponent();
-            _unitOfWork.UserData.GetAll();
+            _userDataService = userDataService;
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (_userDataService.GetUser() is null)
+            {
+                await Navigation.PushAsync(
+                    new UserDataFormPage(_userDataService)
+                );
+            }
+            var dupa = _userDataService.GetUser();
         }
     }
 }

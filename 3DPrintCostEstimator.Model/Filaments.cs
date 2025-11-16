@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FDMPrintCostEstimator.Model
 {
@@ -11,5 +12,10 @@ namespace FDMPrintCostEstimator.Model
         public FilamentType? Type { get; set; }
         public Double Price { get; set; }
         public Double? Weight { get; set; }
+
+        [ForeignKey("UserData")]
+        public int UserDataId { get; set; }
+
+        public UserData? UserData { get; set; }
     }
 }
