@@ -7,7 +7,7 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20">
 
-            <Label Text="Koszt 1 kWh [PLN]"
+            <Label Text="Koszt 1 kWh"
                    FontAttributes="Bold" />
 
             <Entry x:Name="CostEntry"

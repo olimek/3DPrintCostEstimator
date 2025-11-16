@@ -16,14 +16,13 @@ namespace FDMPrintCostEstimator.Pages
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
-            if (_userDataService.GetUser() is null)
+            var userData = _userDataService.GetUser();
+            if (userData is null)
             {
                 await Navigation.PushAsync(
                     new UserDataFormPage(_userDataService)
                 );
             }
-            var dupa = _userDataService.GetUser();
         }
     }
 }
