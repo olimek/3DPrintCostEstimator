@@ -11,6 +11,9 @@ namespace FDMPrintCostEstimator.Model
         [Required]
         public Double Cost1kWh { get; set; }
 
+        public Double ProfitMargin { get; set; }
+        public Double PaintingProfitMargin { get; set; }
+        public Double FailtureRate { get; set; }
         public string? CurencySymbol { get; set; }
         public List<Printers>? Printer { get; set; }
         public List<Filaments>? Filament { get; set; }
